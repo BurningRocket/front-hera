@@ -1,0 +1,13 @@
+<div class="text-4xl">Nome do Produto</div>
+<div class="card flex justify-content-center">
+    <p-card header="" subheader="" [style]="{ width: '360px' }">
+        <ng-template pTemplate="header">
+            <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" />
+        </ng-template>
+    </p-card>
+</div>
+<div class="card flex justify-content-center">
+    <p-button label="" icon="pi pi-minus-circle"></p-button>
+    <p-inputNumber [(ngModel)]="value2" mode="decimal" inputId="withoutgrouping" [useGrouping]="false"> </p-inputNumber>
+    <p-button label="" icon="pi pi-plus-circle"></p-button>
+</div>

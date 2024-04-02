@@ -1,0 +1,8 @@
+.titulo-cadastro{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: 400;
+}

@@ -1,0 +1,11 @@
+<div class="card flex justify-content-center">
+    <p-button (click)="showDialog()" icon="pi pi-search" label=""></p-button>
+    <p-dialog header="Página de Produto" [(visible)]="visible" [modal]="true" [style]="{ width: '50rem'}" [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }">
+        <div [style]="{marginTop:'20px'}">
+            <app-products-page></app-products-page>
+        </div>
+        <ng-template pTemplate="footer">
+            <p-button icon="pi pi-check" (click)="visible = false" label="Ok" pAutoFocus [autofocus]="true"></p-button>
+        </ng-template>
+    </p-dialog>
+    </div>
