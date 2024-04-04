@@ -29,7 +29,7 @@ import { CommonModule } from '@angular/common';
 })
 export class DialogHeader3Component {
   visible: boolean = false;
-  products!: Product[];
+  products: Product[] = [];
 
   constructor() {}
 
