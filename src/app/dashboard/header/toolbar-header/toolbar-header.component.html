@@ -1,19 +1,17 @@
-<div class="main-header card">
-    <p-toolbar styleClass="bg-gray-900 shadow-2" [style]="{ 'border-radius': '3rem', 'background-image': 'linear-gradient(to right, var(--primary-50), var(--surface-100))' }">
-            <img src="/./assets/logo.png" width="60px"/>
-   
-            <div class="flex flex-wrap align-items-center gap-2">
-                <app-dialog-header3></app-dialog-header3>
-                <app-dialog-header></app-dialog-header>
-                <app-dialog-header2></app-dialog-header2>
-                <app-dialog-header4></app-dialog-header4>
-            </div>
+<div class="main-header">
+        <a href="/"><img src="/./assets/logo.png" width="80px"/></a>
 
-        <ng-template pTemplate="end">
-            <div class="flex align-items-center gap-2">
-                <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
-                <span class="font-bold text-bluegray-50">Amy Elsner</span>
-            </div>
-        </ng-template>
-    </p-toolbar>
-    </div>
+        <div class="flex flex-wrap align-items-center gap-2">
+            <app-dialog-header3></app-dialog-header3>
+            <app-dialog-header></app-dialog-header>
+            <app-dialog-header2></app-dialog-header2>
+            <app-dialog-header4></app-dialog-header4>
+        </div>
+
+    <ng-template pTemplate="end">
+        <div class="flex align-items-center gap-2">
+            <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
+            <span class="font-bold text-bluegray-50">Amy Elsner</span>
+        </div>
+    </ng-template>
+</div>

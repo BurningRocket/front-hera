@@ -29,4 +29,8 @@ export const routes: Routes = [
         path: "clientes-cadastrados",
         component: ClientesCadastradosComponent
     },
+    {
+        path: "**",
+        redirectTo: ""
+    }
 ];

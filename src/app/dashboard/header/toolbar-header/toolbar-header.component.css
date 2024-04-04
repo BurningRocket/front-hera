@@ -1,5 +1,10 @@
-.main-header{
-    position: sticky;
-    top: 0;
-    z-index: 999;
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 2px solid #E5E7EB;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #F9FAFB;
 }
