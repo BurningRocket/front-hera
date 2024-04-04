@@ -1,6 +1,6 @@
 <div class="card flex justify-content-center">
     <p-button (click)="showDialog()" icon="pi pi-user" label="" [style]="{backgroundColor:'var(--cor-01)'}"></p-button>
-    <p-dialog header="Header" [(visible)]="visible" [modal]="true" [style]="{ width: '50rem', height:'450px' }" [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }">
+    <p-dialog header="Header" [(visible)]="visible" [modal]="true" [style]="{ width: '25rem', height:'100vh' }" [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }" position="right">
         <ng-template pTemplate="header">
             <div class="inline-flex align-items-center justify-content-center gap-2">
                 <p-avatar image="https://primefaces.org/cdn/primeng/images/avatar/amyelsner.png" shape="circle" />
@@ -11,7 +11,7 @@
             <app-header-panelmenu></app-header-panelmenu>
         </div>
         <ng-template pTemplate="footer">
-            <p-button icon="pi pi-check" (click)="visible = false" label="Ok" pAutoFocus [autofocus]="true"></p-button>
+            <app-login-dialog></app-login-dialog>
         </ng-template>
     </p-dialog>
     </div>

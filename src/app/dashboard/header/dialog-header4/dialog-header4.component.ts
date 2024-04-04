@@ -5,6 +5,7 @@ import { AvatarModule } from 'primeng/avatar';
 import { AutoCompleteHeaderComponent } from '../auto-complete-header/auto-complete-header.component';
 import { TreeSelectHeaderComponent } from '../tree-select-header/tree-select-header.component';
 import { HeaderPanelmenuComponent } from '../header-panelmenu/header-panelmenu.component';
+import { LoginDialogComponent } from '../login-dialog/login-dialog.component';
 
 @Component({
   selector: 'app-dialog-header4',
@@ -16,6 +17,7 @@ import { HeaderPanelmenuComponent } from '../header-panelmenu/header-panelmenu.c
     AutoCompleteHeaderComponent,
     TreeSelectHeaderComponent,
     HeaderPanelmenuComponent,
+    LoginDialogComponent
   ],
   templateUrl: './dialog-header4.component.html',
   styleUrl: './dialog-header4.component.css'

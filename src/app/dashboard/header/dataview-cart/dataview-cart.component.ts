@@ -30,7 +30,9 @@ export class DataviewCartComponent {
   constructor(private productService: ProductService) {}
 
   ngOnInit() {
-      this.productService.getProducts().then((data) => (this.products = data.slice(0, 5)));
+    if(localStorage.getItem('cart')) {
+      this.products = JSON.parse(localStorage.getItem('cart') || '{}');
+    }
   }
 
   getSeverity (product: Product) {

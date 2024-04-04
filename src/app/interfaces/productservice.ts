@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-    
+
 @Injectable()
 export class ProductService {
     getProductsData() {
@@ -1206,7 +1206,7 @@ export class ProductService {
     }
 
     getProductsSmall() {
-        return Promise.resolve(this.getProductsData().slice(0, 10));
+        return Promise.resolve(this.getProductsData().slice(0, 9));
     }
 
     getProducts() {
