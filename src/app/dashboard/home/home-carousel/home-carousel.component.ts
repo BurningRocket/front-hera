@@ -52,14 +52,6 @@ export class HomeCarouselComponent {
 
     });
 
-    // this.produtoService.getAll().subscribe((data: any) => {
-    //   this.produtos = data;
-    //   this.primeirosProdutos = this.produtos.slice(0, 10);
-    //   console.log('Produtos: ', this.produtos);
-    // }, (error: any) => {
-    //   console.log('Erro ao buscar dados do servidor');
-    // })
-
   }
 
   addToCart(product: Product) {
